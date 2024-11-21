@@ -11,44 +11,6 @@ body {
     color: #1d0000;
   }
   
-/* Jumbotron Styling */
-.jumbotron {
-    background: linear-gradient(to right, #220000, #ff0000);
-    color: white;
-    padding: 3rem;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 2rem;
-  }
-  
-  .jumbotron h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  .jumbotron .lead {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 1.5rem;
-  }
-  
-  .jumbotron hr {
-    width: 50%;
-    border: 0;
-    height: 2px;
-    background: white;
-    margin: 1.5rem auto;
-    opacity: 0.7;
-  }
-  
-  .jumbotron:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s ease-in-out;
-  }
-  
   /* Contact Section */
   #contact {
     padding: 2rem 1rem;
