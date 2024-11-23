@@ -1,0 +1,33 @@
+<%- include ../Partials/header.ejs%>
+<%- include ../Partials/main_nav.ejs%>
+<!--Content for the edit Operation-->
+<div class="container"></div>
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="nameTextField">Week</label>
+                    <input type="text" class="form-control" id="weekTextField" placeholder="Enter the week of the weight" name="Week" value="<%= weight.week %>" required>
+                </div>
+                <div class="form-group">
+                    <label for="authorTextField">Weight</label>
+                    <input type="text" class="form-control" id="weightTextField" placeholder="Enter the weight of the week" name="Weight" value="<%= weight.weight %>" required>
+                </div>
+                <div class="form-group">
+                    <label for="publishedTextField">Goal Reached?</label>
+                    <input type="text" class="form-control" id="GoalReachedTextField" placeholder="HAve you reached the goal? (yes or no)" name="Goal Reached?" value="<%= weight.GoalReached %>" required>
+                </div>
+                <div class="form-group">
+                    <label for="descriptionTextArea">Date</label>
+                    <input type="text" class="form-control" id="dateTextField"  placeholder="enter the date" name="Date" required><%= weight.date %>
+               
+                <button class="btn btn-primary" type="submit">Submit
+                <i class="fas fa-edit"></i></button>  
+                <button class="btn btn-warning" type="submit">Cancel
+                    <i class="fas fa-undo"></i></button>    
+            </form>
+        </div>
+    </div>
+</div>
+<%- include ../Partials/footer.ejs%>
