@@ -1,12 +1,12 @@
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
-let weightModel = require('../models/weight'); // Renamed to avoid shadowing
+let weightModel = require('../models/weight'); 
 
 /* Read Operation */
 router.get('/', async (req, res, next) => {
     try {
-        const weightList = await weightModel.find();  // Use weightList to avoid confusion
+        const weightList = await weightModel.find();  
         res.render('weight/list', {
             title: 'Weight Tracker',
             weight: weightList,
@@ -35,7 +35,7 @@ router.post('/add', async (req, res, next) => {
             GoalReached: req.body.GoalReached,
             date: req.body.date,
         });
-        await newWeight.save();  // Use .save() instead of .create() here
+        await newWeight.save(); 
         res.redirect('/weight');
     } catch (err) {
         console.error(err);
